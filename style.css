@@ -1,0 +1,1277 @@
+/********************************************************************************************************************************************************
+Name: Lutecia
+Version: 1.0
+Author: Alessandra @ bulabe.com
+URL: http://www.realdelutecia.com
+/*******************************************************************************************************************************************************/
+
+*, html, body, div, span, h1, h2, h3, h4, h5, h6, p, img, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, table, caption, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------
+COLOR GUIDE & FONTS
+Blanco #fff
+Negro #1a1a1a
+Naranja #ff6600
+Café #683817
+-- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------
+	BASICS: TAGS
+----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+body {
+	background-color: #ebe8e5;
+	background-image: url('images/stripes.png');
+	background-attachment: fixed;
+	color: #000;
+	font-family: 'Istok Web', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	text-align: center;
+	overflow-x: hidden;
+}
+
+h1, h2 {
+	font-weight: 400;
+}
+
+h2 {
+	font-family: 'Dancing Script', cursive;
+	font-weight: 700;
+	font-size: 28px;
+}
+
+h3 {
+	font-family: 'Dancing Script', cursive;
+	font-weight: 700;
+	color: #fff;
+	font-size: 28px;
+	margin: 10px 0 20px 0;
+}
+
+h4 {
+	color: #ff6600;
+	font-weight: 400;
+	font-size: 24px;
+	letter-spacing: 1px;
+}
+
+p {
+	font-size: 16px;
+	text-align: left;
+	margin: 0 0 12px 0;
+}
+
+p.center {
+	text-align: center;
+}
+
+ul {
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+img {
+	margin: 0;
+	padding: 0;
+}
+
+a:link, a:visited, a:active {
+	text-decoration: none;
+	color: #0b272a;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #ff6600;
+	-webkit-transition: color 0.3s linear 0s;
+	-moz-transition: color 0.3s linear 0s;
+	-o-transition: color 0.3s linear 0s;			
+	transition: color 0.3s linear 0s;	
+}
+
+a:link img, a:visited img, a:active img, a:hover img { 
+	border: none;
+	background-color: transparent;
+}
+
+::selection,
+::-moz-selection {
+	background-color: #683817;
+	color: #fff;
+}
+
+strong {
+	font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------
+	LAYOUT
+----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+div.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.floatl {
+	float: left;
+}
+
+.floatr {
+	float: right;
+}
+
+.clearfix {
+	clear: both;
+}
+
+
+
+
+
+
+
+div.f4f1ed {
+	width: 100%;
+	padding: 30px 0;
+	background-color: #f4f1ed;
+	box-shadow: 0 3px 3px #b5afac;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------
+	HEADER
+----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+header {
+	width: 100%;
+	height: 150px;
+	background-color: #ebe8e5;
+	background-image: url('images/bgd_pattern.png');
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 800;
+	padding: 10px 0 3px 0;
+	box-shadow: 0 3px 3px #b5afac;
+}
+
+header div.wrapper {
+	width: 800px;
+}
+
+a#logo:link, 
+a#logo:visited, 
+a#logo:active,
+a#logo:hover {
+	display: block;
+	width: 367px;
+	height: 90px;
+	background-image: url('images/lutecia_home-main.png');
+	overflow: hidden;
+	text-indent: 120%;
+	float: left;
+}
+
+a.highlight:link, 
+a.highlight:visited, 
+a.highlight:active {
+	padding: 6px 12px;
+	background-color: #f65020;
+	color: #fff;
+	letter-spacing: 1px;	
+	border-radius: 4px;
+	box-shadow: 0 2px 2px #b2b2b2;
+}
+
+a.highlight:hover {
+	background-color: #683817;
+	-webkit-transition: background-color 0.3s linear 0s;
+	-moz-transition: background-color 0.3s linear 0s;
+	-o-transition: background-color 0.3s linear 0s;			
+	transition: background-color 0.3s linear 0s;	
+}
+
+.highlightHeader {
+	margin: 25px 50px 0 0;
+}
+
+a#logo:link, 
+a#logo:visited, 
+a#logo:active,
+a#logo:hover {
+	display: block;
+	width: 367px;
+	height: 90px;
+	background-image: url('images/lutecia_home-main.png');
+	overflow: hidden;
+	text-indent: 120%;
+	float: left;
+}
+
+#call-to-call {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	padding: 10px 20px 10px 20px;
+	z-index: 1011;
+	background-color: #f65020;
+	border-radius: 0 0 12px 12px;
+}
+
+#call-to-call p {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+	margin: 0;
+}
+
+a#top:link,
+a#top:visited,
+a#top:active {
+	display: block;
+	width: 76px;
+	height: 67px;
+	overflow: hidden;
+	text-indent: 200px;
+	background-image: url('images/a_top.png');
+	background-position: 0 0;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	z-index: 1999;
+}
+
+a#top:hover {
+	background-position: 0 -70px;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------
+	NAV
+----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+ul#menu {
+	display: block;
+	list-style-type: none;
+	width: 800px;
+	margin: 20px 0 15px 25px;
+	position: relative;
+}
+
+ul#menu li {
+	position: relative;
+}
+
+ul#menu li a:link,
+ul#menu li a:visited, 
+ul#menu li a:active {
+	display: block;
+	position: relative;
+	font-size: 15px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: left;
+	background-image: url('images/bullet.png');
+	background-repeat: no-repeat;
+	background-position: left 4px;
+	padding: 0 15px 0 25px;
+	float: left;
+}
+
+ul#menu li:first-child a:link, 
+ul#menu li:first-child a:visited, 
+ul#menu li:first-child a:active {
+	padding: 0 15px 0 0;
+	background-image: none;
+}
+
+ul#menu li a:hover {
+	text-decoration: none;
+	-webkit-transition: color 0.2s linear 0s;
+	-moz-transition: color 0.2s linear 0s;
+	-o-transition: color 0.2s linear 0s;			
+	transition: color 0.2s linear 0s;
+}
+
+ul#menu li a.selected:link, 
+ul#menu li a.selected:visited, 
+ul#menu li a.selected:active {
+	font-size: 700;
+	color: #f65020;
+}
+
+ul.dropdown {
+	margin: 0;
+	padding: 0;
+	display: block;
+	position: absolute;
+	z-index: 999;
+	width: 180px;
+	display: none;
+	top: 30px;
+}
+
+.dpwnCon {
+	left: 580px;	
+}
+
+.dpwnCas {
+	left: 0px;
+}
+
+ul.dropdown li {
+	margin: 0;
+	padding: 0;
+	float: none;
+	clear: both;
+	position: relative;
+	list-style: none;
+	display: block;
+}
+
+ul#menu li ul.dropdown li a:link,
+ul#menu li ul.dropdown li a:visited,
+ul#menu li ul.dropdown li a:active {
+	display: block;
+	width: 100%;
+	background-image: none;
+	background-color: #683817;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+	border-bottom: 1px solid #fff;
+	padding: 10px 10px 10px 10px;
+}
+
+ul#menu li ul.dropdown li a:hover {
+	color: #ff6600;
+	font-weight: 700;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1180px) {
+
+	div#slogan {
+		display: none;
+	}
+
+	div.slider {
+		margin: 150px 0 0 0;
+	}
+
+}
+
+
+
+
+
+@media screen and (max-width: 730px) {
+	
+	header {
+		height: 250px;
+	}
+	
+	div.slider {
+		margin-top: 280px;
+	}
+	
+	ul#menu li a:link,
+	ul#menu li a:visited, 
+	ul#menu li a:active {
+		display: block;
+		float: none;
+	}
+	
+	ul#menu li:first-child a:link, 
+	ul#menu li:first-child a:visited, 
+	ul#menu li:first-child a:active {
+		background-image: url('images/bullet.png');
+		padding: 0 15px 0 25px;
+	}
+	
+	#call-to-call {
+		width: 150px;
+		top: 160px;
+		right: 0px;
+		border-radius: 0;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------
+	PERFILES
+----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+div#perfiles {
+	width: 100%;
+	background-color: #683817;
+	border-top: 1px solid #683817;
+	background-image: url('images/bgd_noise_coffe.png');
+	padding: 0 0 20px 0;
+	clear: both;
+}
+
+ul#profile {
+	width: 700px;
+	list-style-type: none;
+	margin: 0 auto;
+}
+
+ul#profile li a:link, 
+ul#profile li a:visited, 
+ul#profile li a:active {
+	display: block;
+	width: 139px;
+	height: 80px;
+	padding: 0 0 0 0;
+
+	color: #f6f1ed;
+	
+	font-size: 12px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 135px;
+	letter-spacing: 1px;
+	
+	border-top: 1px solid #f6f1ed;
+	border-right: 1px solid #f6f1ed;
+	
+	background-repeat: no-repeat;
+	
+	opacity: 0.8;
+	float: left;
+}
+
+
+ul#profile li:nth-child(5) a:link, 
+ul#profile li:nth-child(5) a:visited, 
+ul#profile li:nth-child(5) a:active,
+ul#profile li:nth-child(10) a:link, 
+ul#profile li:nth-child(10) a:visited, 
+ul#profile li:nth-child(10) a:active {
+	border-right: none;
+}
+
+ul#profile li:nth-child(1) a:link, 
+ul#profile li:nth-child(1) a:visited, 
+ul#profile li:nth-child(1) a:active,
+ul#profile li:nth-child(2) a:link, 
+ul#profile li:nth-child(2) a:visited, 
+ul#profile li:nth-child(2) a:active,
+ul#profile li:nth-child(3) a:link, 
+ul#profile li:nth-child(3) a:visited, 
+ul#profile li:nth-child(3) a:active,
+ul#profile li:nth-child(4) a:link, 
+ul#profile li:nth-child(4) a:visited, 
+ul#profile li:nth-child(4) a:active,
+ul#profile li:nth-child(5) a:link, 
+ul#profile li:nth-child(5) a:visited, 
+ul#profile li:nth-child(5) a:active {
+	border-top: none;
+}
+
+ul#profile li a:hover {
+	opacity: 1;
+	color: #fff;
+	-webkit-transition: color 0.3s linear 0s;
+	-moz-transition: color 0.3s linear 0s;
+	-o-transition: color 0.3s linear 0s;			
+	transition: color 0.3s linear 0s;
+	-webkit-transition: opacity 0.3s linear 0s;
+	-moz-transition: opacity 0.3s linear 0s;
+	-o-transition: opacity 0.3s linear 0s;			
+	transition: opacity 0.3s linear 0s;	
+}
+
+ul#profile li#pf1 a:link,
+ul#profile li#pf1 a:visited,
+ul#profile li#pf1 a:active {
+	background-image: url('images/profile-1.png');
+	background-position: 54px 1px;
+}
+
+ul#profile li#pf2 a:link,
+ul#profile li#pf2 a:visited,
+ul#profile li#pf2 a:active {
+	background-image: url('images/profile-2.png');
+	background-position: 53px 1px;
+}
+
+ul#profile li#pf3 a:link,
+ul#profile li#pf3 a:visited,
+ul#profile li#pf3 a:active {
+	background-image: url('images/profile-3.png');
+	background-position: 42px 1px;
+}
+
+ul#profile li#pf4 a:link,
+ul#profile li#pf4 a:visited,
+ul#profile li#pf4 a:active {
+	background-image: url('images/profile-4.png');
+	background-position: 45px 1px;
+}
+
+ul#profile li#pf5 a:link,
+ul#profile li#pf5 a:visited,
+ul#profile li#pf5 a:active {
+	background-image: url('images/profile-5.png');
+	background-position: 27px 1px;
+}
+
+ul#profile li#pf6 a:link,
+ul#profile li#pf6 a:visited,
+ul#profile li#pf6 a:active {
+	background-image: url('images/profile-6.png');
+	background-position: 23px 1px;
+}
+
+ul#profile li#pf7 a:link,
+ul#profile li#pf7 a:visited,
+ul#profile li#pf7 a:active {
+	background-image: url('images/profile-7.png');
+	background-position: 28px 1px;
+}
+
+ul#profile li#pf8 a:link,
+ul#profile li#pf8 a:visited,
+ul#profile li#pf8 a:active {
+	background-image: url('images/profile-8.png');
+	background-position: 45px 1px;
+}
+
+ul#profile li#pf9 a:link,
+ul#profile li#pf9 a:visited,
+ul#profile li#pf9 a:active {
+	background-image: url('images/profile-9.png');
+	background-position: 38px 1px;
+}
+
+ul#profile li#pf10 a:link,
+ul#profile li#pf10 a:visited,
+ul#profile li#pf10 a:active {
+	background-image: url('images/profile-10.png');
+	background-position: 45px 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------
+	INDEX
+----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+ul#radio {
+	list-style-type: none;
+	position: fixed;
+	top: 300px;
+	right: 20px;
+	z-index: 751;
+}
+
+ul#radio li a:link, 
+ul#radio li a:visited, 
+ul#radio li a:active {
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	text-indent: 120px;
+	overflow: hidden;
+	background-color: #663300;
+	margin: 10px 0;
+}
+
+ul#radio li a:hover {
+	background-color: #ff6600;
+	-webkit-transition: background-color 0.2s linear 0s;
+	-moz-transition: background-color 0.2s linear 0s;
+	-o-transition: background-color 0.2s linear 0s;			
+	transition: background-color 0.2s linear 0s;
+}
+
+ul#radio li a.activo:link, 
+ul#radio li a.activo:visited, 
+ul#radio li a.activo:active {
+	background-color: #0d1d1f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------
+SLIDER
+----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+div.slider {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	top: 0;
+	left: 0;
+	min-height: 300px;
+}
+
+div.preloader {
+	width: 40px;
+	height: 40px;
+	background-image: url('images/ajax-loader.gif');
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	margin: 0 0 0 -15px;
+	z-index: 300;
+}
+
+div.images {
+	width: 600%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+div.images img {
+	float: left;
+}
+
+
+
+
+
+
+div#form-home {
+	padding: 10px 0 10px 10px;
+	background-image: url('images/bgd-opacity-clear.png');
+	right: 20px;
+	bottom: 0;
+	position: absolute;
+}
+
+form#myformHome {
+	width: 380px;
+	margin: 0 auto;
+}
+
+form#myformHome h2 {
+	margin: 0;
+}
+
+form#myformHome label {
+	display: block;
+	font-family: 'Istok Web', sans-serif;
+	font-size: 14px;
+	text-align: left;
+	margin:  0;
+}
+
+form#myformHome input {
+	font-family: 'Istok Web', sans-serif;
+	font-size: 14px;
+	background-color: #683817;
+	background-image:url(images/bgd_noise_coffe.png);
+	color: #fff;
+	padding: 6px;
+	margin: 5px 0;
+	width: 90%;
+}
+
+form#myformHome textarea {
+	font-family: 'Istok Web', sans-serif;
+	font-size: 14px;
+	height: 90px;
+	background-color: #683817;
+	background-image:url(images/bgd_noise_coffe.png);
+	color: #fff;
+	padding: 6px;
+	margin: 5px 0;
+	width: 90%;
+}
+
+form#myformHome input:focus,
+form#myformHome textarea:focus {
+	background-color: #f65020;
+	background-image: none;
+}
+
+form#myformHome input#send {
+	width: 100px;
+	background-color: #f65020;
+	background-image: none;
+	color: #fff;
+	font-family: 'Istok Web', sans-serif;
+	text-align: center;
+	letter-spacing: 1px;
+	padding: 6px;
+	font-size: 14px;
+	margin: 5px auto;
+	margin: 0;
+}
+
+form#myformHome input#send:hover {
+	background-color: red;
+}
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------
+	-- SECCIONES --
+/----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+.casas {
+	width: 100%;
+	background-image: url('images/lutecia_lifestyle-1.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	min-height: 800px;
+	margin: 150px 0 0 0;
+	padding: 30px 0 0 0;
+}
+
+.historias {
+	width: 100%;
+	background-image: url('images/lutecia_lifestyle-5.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	min-height: 800px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+.contacto-1,
+.contacto-2,
+.contacto-3 {
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	min-height: 800px;
+	margin: 150px 0 0 0;
+	padding: 20px 0 0 0;
+}
+
+.contacto-1 {
+	background-image: url('images/lutecia_lifestyle-2.jpg');
+	padding: 30px 0 0 0;
+}
+
+.contacto-2 {
+	background-image: url('images/lutecia_lifestyle-3.jpg');
+}
+
+.contacto-3 {
+	background-image: url('images/lutecia_lifestyle-4.jpg');
+}
+
+
+
+
+
+
+.boxCasas {
+	width: 260px;
+	background-image: url('images/bgd_pattern.png');
+	border-radius: 12px;
+	float: left;
+	margin: 10px 0 20px 0;
+	padding: 20px 20px 30px 20px;
+	box-shadow: 0 3px 3px #b5afac;
+}
+
+.boxCasas p {
+	text-align: center;
+}
+
+p.legend {
+	font-weight: 700;
+	font-size: 16px;
+	margin: 15px 0 10px 0;
+	text-align: left;
+}
+
+.bgnCapt {
+	background-color: #ff6600;
+	color: #fff;
+	padding: 5px 0;
+	text-align: center;
+}
+
+p.description {
+	font-size: 14px;
+	text-align: left;
+	margin: 14px 0 0 0;
+}
+
+
+
+
+
+
+
+.amenitie {
+	width: 100%;
+	position: relative;
+	box-shadow: 0 0 3px #b5afac;
+}
+
+.amenitie img {
+	width: 100%;
+}
+
+.amenitie .description {
+	position: absolute;
+	top: 50px;
+	left: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------
+ - FOOTER
+----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+footer {
+	width: 100%;
+	padding: 20px 0;
+	margin: 0;
+	background-color: #683817;
+	background-image: url('images/bgd_pattern.png');
+	box-shadow: 0 3px 3px #b5afac;
+}
+
+footer p {
+	font-size: 16px;
+	letter-spacing: 1px;
+	text-align: center;
+	margin: 0;
+}
+
+footer a:link, footer a:visited, footer a:active {
+	color: #1a1a1a;
+}
+
+footer a:hover {
+	color:#F65020;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------
+	CONTACTO -	FORM	
+----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+div#thx {
+	width: 620px;
+	margin: 20px auto;
+	min-height: 450px;
+	background-image: url('images/bgd-opacity-clear.png');
+	padding: 20px 10px;
+}
+
+div#form-home {
+	padding: 10px 0 10px 10px;
+	
+	right: 20px;
+	bottom: 0;
+	position: absolute;
+}
+
+span#adv_n, span#adv_c, span#adv_m {
+	color: red;
+}
+
+form#myform {
+	width: 480px;
+	margin: 0 auto;
+}
+
+
+
+
+
+form#myform label,
+form#myform p {
+	display: block;
+	font-family: 'Istok Web', sans-serif;
+	font-size: 18px;
+	text-align: left;
+	margin: 6px 0;
+}
+
+form#myform input {
+	font-family: 'Istok Web', sans-serif;
+	font-size: 14px;
+	background-color: #683817;
+	background-image:url(images/bgd_noise_coffe.png);
+	color: #fff;
+	padding: 6px;
+	margin: 5px 0;
+	width: 90%;
+}
+
+form#myform textarea {
+	font-family: 'Istok Web', sans-serif;
+	font-size: 14px;
+	height: 90px;
+	background-color: #683817;
+	background-image:url(images/bgd_noise_coffe.png);
+	color: #fff;
+	padding: 6px;
+	margin: 5px 0;
+	width: 90%;
+}
+
+form#myform input:focus,
+form#myform textarea:focus {
+	background-color: #f65020;
+	background-image: none;
+}
+
+form#myform input#submit {
+	width: 100px;
+	background-color: #f65020;
+	background-image: none;
+	color: #fff;
+	font-family: 'Istok Web', sans-serif;
+	text-align: center;
+	letter-spacing: 1px;
+	padding: 6px;
+	font-size: 14px;
+	margin: 5px auto;
+	margin: 0;
+}
+
+form#myform input#submit:hover {
+	background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------
+	CLASES
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.w230 {
+	width: 230px;
+}
+
+.w300 {
+	width: 300px;
+}
+
+.w420 {
+	width: 460px;
+}
+
+.w620 {
+	width: 620px;
+}
+
+.mt5 {
+	margin-top: 5px;
+}
+
+.mt15 {
+	margin-top: 15px;
+}
+
+.mt20 {
+	margin-top: 20px;
+}
+
+.mt30 {
+	margin-top: 30px;
+}
+
+.mt40 {
+	margin-top: 45px;
+}
+
+.mt50 {
+	margin-top: 50px;
+}
+
+.mt100 {
+	margin-top: 100px;
+}
+
+.mt120 {
+	margin-top: 120px;
+}
+
+.mt130 {
+	margin-top: 130px;
+}
+
+.mt140 {
+	margin-top: 140px;
+}
+
+.mt150 {
+	margin-top: 160px;
+}
+
+.mr20 {
+	margin-right: 20px;
+}
+
+.mr30 {
+	margin-right: 30px;
+}
+
+.mr50 {
+	margin-right: 50px;
+}
+
+.mb20 {
+	margin-bottom: 20px;
+}
+
+.ml20 {
+	margin-left: 20px;
+}
+
+.ml40 {
+	margin-left: 40px;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
